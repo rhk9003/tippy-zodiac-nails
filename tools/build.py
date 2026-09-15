@@ -32,7 +32,7 @@ CSS = """
 .tpz .tpz-nav a{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:13px;line-height:1.4}
 .tpz .tpz-dot{width:56px;height:56px;border-radius:50%;background:var(--tpz-blush);color:var(--tpz-accent);display:flex;align-items:center;justify-content:center;font-size:24px;line-height:1;transition:background-color .2s,color .2s}
 .tpz .tpz-nav a:hover .tpz-dot{background:var(--tpz-pink);color:#fff}
-.tpz .tpz-sign{padding:44px 0;border-top:1px solid var(--tpz-line);scroll-margin-top:110px}
+.tpz .tpz-sign{padding:44px 0;border-top:1px solid var(--tpz-line);scroll-margin-top:140px}
 .tpz .tpz-sign-head{text-align:center;margin-bottom:28px}
 .tpz .tpz-sign-glyph{display:inline-flex;width:44px;height:44px;border-radius:50%;background:var(--tpz-blush);color:var(--tpz-accent);align-items:center;justify-content:center;font-size:20px;line-height:1;margin-bottom:8px}
 .tpz .tpz-sign-name{font-size:22px;font-weight:500;letter-spacing:.25em;padding-left:.25em;line-height:1.4}
@@ -42,7 +42,7 @@ CSS = """
 .tpz .tpz-sign-text p+p{margin-top:8px}
 .tpz .tpz-meta{margin-top:20px;border-top:1px solid var(--tpz-line)}
 .tpz .tpz-meta div{display:flex;gap:16px;padding:10px 0;border-bottom:1px solid var(--tpz-line);font-size:14px;line-height:1.6}
-.tpz .tpz-meta dt{flex:0 0 5.5em;color:var(--tpz-muted)}
+.tpz .tpz-meta dt{flex:0 0 6.8em;color:var(--tpz-muted);white-space:nowrap}
 .tpz .tpz-meta dd{display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px}
 .tpz .tpz-color{display:inline-flex;align-items:center;gap:6px}
 .tpz .tpz-sw{display:inline-block;width:14px;height:14px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12)}
