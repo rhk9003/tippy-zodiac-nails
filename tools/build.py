@@ -53,6 +53,7 @@ CSS = """
 .tpz .tpz-card-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .4s}
 .tpz a.tpz-card:hover .tpz-card-img img{transform:scale(1.03)}
 .tpz .tpz-card-name{display:block;font-size:14px;line-height:1.5;margin-top:10px}
+.tpz .tpz-card-why{display:block;font-size:13px;line-height:1.7;color:var(--tpz-muted);margin-top:4px}
 .tpz .tpz-empty{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;border:1px dashed var(--tpz-pink);color:var(--tpz-accent);font-size:13px;letter-spacing:.2em}
 .tpz .is-empty .tpz-card-name{color:var(--tpz-muted)}
 .tpz .tpz-cta{text-align:center;padding:40px 0 8px;border-top:1px solid var(--tpz-line)}
@@ -102,8 +103,9 @@ def card(p):
         return ('<div class="tpz-card is-empty"><span class="tpz-card-img"><span class="tpz-empty">待提品</span></span>'
                 '<span class="tpz-card-name">商品名稱</span></div>')
     img = f'<img src="{esc(p.get("image"))}" alt="{esc(p.get("name"))}" loading="lazy">' if p.get("image") else ""
+    why = f'<span class="tpz-card-why">{esc(p["reason"])}</span>' if p.get("reason") else ""
     return (f'<a class="tpz-card" href="{esc(p["url"])}"><span class="tpz-card-img">{img}</span>'
-            f'<span class="tpz-card-name">{esc(p.get("name"))}</span></a>')
+            f'<span class="tpz-card-name">{esc(p.get("name"))}</span>{why}</a>')
 
 
 def sign_block(s, picks_title):
